@@ -1,0 +1,27 @@
+<header>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                GAME CHARACTERS
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse navbar-options" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto d-flex align-items-center navbar-options__list">
+                    <li class="nav-item">
+                        <a class="nav-link" [routerLink]="['/list']">
+                            Ver personajes
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn-primary" [routerLink]="['/add']">
+                            Agregar personaje
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

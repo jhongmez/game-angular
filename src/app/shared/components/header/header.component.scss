@@ -1,0 +1,29 @@
+@import 'src/styles';
+
+header {
+
+    .navbar { 
+        box-shadow: 0 1em 1em -1em rgba(75, 75, 75, 0.25);
+        padding: 20px 40px;
+
+        .navbar-options {
+
+            &__list {
+                display: flex;
+
+                li {
+                    margin-left: 40px;
+                    .nav-link {
+                        color: $black;
+                    }
+                    a {
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+
+        }
+    }
+
+}
