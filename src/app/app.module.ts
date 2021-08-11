@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { HeaderModule } from './shared/components/header/header.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { HeaderModule } from './shared/components/header/header.module';
     BrowserModule,
     AppRoutingModule,
     ModalModule.forRoot(),
+    HttpClientModule,
     HeaderModule
   ],
   providers: [],
