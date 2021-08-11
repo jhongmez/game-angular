@@ -1,0 +1,26 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "nameCharacter": "Draven",
+      "roleCharacter": "Tirador",
+      "descriptionCharacter": "En Noxus, los guerreros llamados ''jueces'' se enfrentan unos a otros en arenas donde la sangre corre y la fuerza se pone a prueba, pero nadie ha sido tan celebrado como Draven.",
+      "ageCharacter": 35,
+      "personalityCharacter": "Adicto",
+      "skillCharacter": "Muerte Rodante",
+      "createdCharacter": "2021-08-11",
+      "nameCreator": "League of Legends"
+    },
+    {
+      "id": 2,
+      "nameCharacter": "Thresh",
+      "roleCharacter": "Soporte",
+      "descriptionCharacter": "Sádico y astuto, Thresh es un espíritu ambicioso e incansable de las Islas de la Sombra.",
+      "ageCharacter": 1000,
+      "personalityCharacter": "Astuto",
+      "skillCharacter": "La caja",
+      "createdCharacter": "2021-08-11",
+      "nameCreator": "League of Legends"
+    }
+  ]
+}
