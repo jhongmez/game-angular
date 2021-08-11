@@ -1,0 +1,92 @@
+<section  id="add-characters">
+    <div class="container pt-10">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <form [formGroup]="formValue">
+                    <div class="mb-3">
+                        <label for="nameCharacter">Nombre del personaje</label>
+                        <input
+                            formControlName="nameCharacter" 
+                            type="text" 
+                            id="nameCharacter" 
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="roleCharacter">Rol del personaje</label>
+                        <select 
+                            formControlName="roleCharacter" 
+                            id="roleCharacter" 
+                            class="form-control">
+                            <option value="">Seleccione</option>
+                            <option 
+                            *ngFor="let rol of roles"
+                            value="{{ rol }}">{{ rol }}</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descriptionCharacter">Descripcion del personaje</label>
+                        <textarea 
+                            formControlName="descriptionCharacter" 
+                            id="descriptionCharacter" 
+                            cols="30" 
+                            rows="5" 
+                            class="form-control">
+                        </textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="ageCharacter">Edad</label>
+                        <input 
+                            formControlName="ageCharacter"
+                            type="number" 
+                            id="ageCharacter" 
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="personalityCharacter">Personalidad</label>
+                        <select 
+                            formControlName="personalityCharacter"
+                            id="personalityCharacter" 
+                            class="form-control">
+                            <option value="">Seleccione</option>
+                            <option 
+                            *ngFor="let personality of personalities"
+                            value="{{ personality }}">{{ personality }}</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="skillCharacter">Habilidad</label>
+                        <input 
+                            formControlName="skillCharacter"
+                            type="text" 
+                            id="skillCharacter" 
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="createdCharacter">Fecha de creación</label>
+                        <input 
+                            formControlName="createdCharacter"
+                            type="date" 
+                            id="createdCharacter" 
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nameCreator">Nombre creador</label>
+                        <input 
+                            formControlName="nameCreator"
+                            type="text" 
+                            id="nameCreator" 
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <button 
+                            (click)="postCharacterDetails()"
+                            type="button"
+                            class="btn-primary">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

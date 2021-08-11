@@ -1,0 +1,30 @@
+@import 'src/styles';
+
+#list-characters {
+    height: 100vh;
+
+    .characters {
+
+        .character-card {
+            margin-bottom: 38px;
+            background-color: $white;
+            border-radius: 5px;
+            padding: 30px;
+
+            &__content {
+                display: flex;
+
+                .description {
+                    h3 {
+                        font-size: 1.25rem;
+                        font-family: $poppins;
+                    }
+                    p {
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
